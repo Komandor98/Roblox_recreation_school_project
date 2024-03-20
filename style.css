@@ -1,0 +1,580 @@
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #232527;
+    color: white;
+}
+.spacer {
+    width: 5px;
+}
+
+/*Top navbar*/
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #191B1D;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logo_img {
+    background-image: url(https://images.rbxcdn.com/d82801b936c26e174c4e782510a72d78-roblox_logo_dark_08292022.svg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 118px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 118px 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover:not(.rob_logo) {
+    border-bottom: 3px white solid;
+    padding-bottom: 11px;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.search_btn {
+    float: left;
+    width: 300px;
+    padding: 6px;
+    border: none;
+    margin-top: 6px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.7);
+    border-color: hsla(0,0%,100%,.2);
+}
+.search_img {
+    opacity: .7;
+    background-size: 100% auto;
+    background-position: -1px -20px;
+    height: 20px;
+    width: 20px;
+    background-size: 40px auto;
+    margin: 0 6px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSA0LjEwOEE3LjgxMSA3LjgxMSAwIDAwOC42MyAxLjM2Yy0yLjkzNC4xNDctNS4zNDggMS44MzgtNi42NTcgNC4yMzhhLjc1Ljc1IDAgMTAxLjMxNy43MThjMS4wNzktMS45NzggMy4wNDMtMy4zNCA1LjQxNi0zLjQ1OGE2LjMxMiA2LjMxMiAwIDAxNS4wODEgMi4xNGgtMS42ODZhLjc1Ljc1IDAgMDAwIDEuNUgxNi41VjIuMWEuNzUuNzUgMCAwMC0xLjUgMHYyLjAwOHpNMS41IDExLjUwNmg0LjM5OWEuNzUuNzUgMCAwMTAgMS41aC0xLjY4YTYuMzEyIDYuMzEyIDAgMDA1LjA3NSAyLjEzM2MyLjM4NC0uMTIgNC40MDEtMS40ODggNS40MDgtMy40NDJhLjc1Ljc1IDAgMDExLjMzMy42ODdjLTEuMjQ5IDIuNDI0LTMuNzQyIDQuMTA3LTYuNjY2IDQuMjUzQTcuODEyIDcuODEyIDAgMDEzIDEzLjg4OXYyLjAxNmEuNzUuNzUgMCAwMS0xLjUgMHYtNC40ek0xMi41IDI1LjVhNSA1IDAgMTEtMTAgMCA1IDUgMCAwMTEwIDB6TTEgMjUuNWE2LjUgNi41IDAgMDAxMC40MzYgNS4xNzNsNC4wNzUgNC4wNzJhLjg3Mi44NzIgMCAwMDEuMjM0LS4wMDIuODc2Ljg3NiAwIDAwLS4wMDItMS4yMzdsLTQuMDcxLTQuMDY4QTYuNSA2LjUgMCAxMDEgMjUuNXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+}
+.search_btn input[type=text]{
+    background-color:rgba(0,0,0,.7);
+    border: none;
+    width: 98%;
+    float: right;
+    color: white;
+}
+.profile_stuff{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 2px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.profile_picture {
+    background-size: 100% auto;
+    background-image: url(https://i.pinimg.com/564x/1a/06/7b/1a067bfe2cfeb14e31082f54df3be2e4.jpg);
+    border-radius: 100px;
+    width: 30px; 
+    height: 30px;
+}
+
+.mid_txt{
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+.profile_picture:hover{
+    cursor: pointer;
+}
+.mid_txt:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.small_txt {
+    font-size: 10px;
+    font-weight: 500;
+}
+#small_position {
+    padding-bottom: 1px;
+}
+.notifications {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 2px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+}
+.bell_icon {
+    background-size: 56px auto;
+    width: 28px;
+    height: 28px;
+    background-position: 0 -84px;
+    background-image: url(https://images.rbxcdn.com/d935c70bed81f91538cca4b19eebd319-common_dark.svg);
+}
+.notifications:hover {
+    background-color: #303234;
+    cursor: pointer;
+}
+.robux {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 2px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+}
+.robux_img {
+    background-size: 56px auto;
+    width: 28px;
+    height: 28px;
+    background-image: url(https://images.rbxcdn.com/3a9b44283e65ae1ead90defcb0bdcb6e-economy_28x28_dark.svg);
+}
+.robux_amount {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.robux:hover {
+    background-color: #303234;
+    cursor: pointer;
+}
+
+.setting {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 2px;
+    margin-right: 16px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+    
+}
+.setting_img {
+    background-size: 56px auto;
+    width: 28px;
+    height: 28px;
+    background-position: 0 -84px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+}
+.setting:hover {
+    background-color: #303234;
+    cursor: pointer;
+}
+
+/*navbar left*/
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #191B1D;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: hwb(210 14% 85% / 0.7);
+    color: white;
+}
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.profile_picture2 img{
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+}
+
+.profile_things{
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid hwb(240 25% 74% / 0.849);;
+}
+
+.profile_name {
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar_txt {
+    font-size: 16px;
+    font-weight: 500;
+}
+.home {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.home_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -140px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.home:hover .home_img{
+    background-position: -28px -140px;
+}
+
+.profile {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.profile_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -168px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.profile:hover .profile_img{
+    background-position: -28px -168px;
+}
+
+.messages {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.messages_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -196px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.messages:hover .messages_img{
+    background-position: -28px -196px;
+}
+
+.friends {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.friends_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -224px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.friends:hover .friends_img{
+    background-position: -28px -224px;
+}
+
+.avatar {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.avatar_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -252px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.avatar:hover .avatar_img{
+    background-position: -28px -252px;
+}
+
+.inventory {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.inventory_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -280px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.inventory:hover .inventory_img{
+    background-position: -28px -280px;
+}
+.trade{
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.trade_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -308px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.trade:hover .trade_img{
+    background-position: -28px -308px;
+}
+
+.groups {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.groups_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -336px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.groups:hover .groups_img{
+    background-position: -28px -336px;
+}
+
+.blog {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.blog_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -364px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.blog:hover .blog_img{
+    background-position: -28px -364px;
+}
+.official_store{
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.official_store_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -420px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.official_store:hover .official_store_img{
+    background-position: -28px -420px;
+}
+
+.gift_cards {
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.gift_cards_img {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -504px;
+    background-image: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+
+}
+.gift_cards:hover .gift_cards_img{
+    background-position: -28px -504px;
+}
+
+.get_premium {
+    background-color: #fff;
+    border-color: #fff;
+    color: #393b3d;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    height: auto;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 9px;
+    
+}
+.container {
+   margin-left: 210px;
+   margin-top: 10px;
+   display: grid;
+
+}
+.slide {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    transition: transform 0.5s;
+    padding-left: 10px;
+}
+.slider {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 215px;
+    border: none;
+    cursor: pointer;
+    background-color: #1E2022;
+    font-size: 18px;
+}
+  
+.btn:active {
+    transform: scale(1.1);
+}
+
+
+.btn-next {
+    right: 0;
+}
+
+.btn-prev {
+    left: 0;
+}
+
+.carousel_arrow_left {
+    background-image: url(https://images.rbxcdn.com/a057a8bc94e7ab78517765ddb4e77384-generic_dark_11062018.svg);
+    background-position: 0 -980px;
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.carousel_arrow_right {
+    background-image: url(https://images.rbxcdn.com/a057a8bc94e7ab78517765ddb4e77384-generic_dark_11062018.svg);
+    background-position: 0 -952px;
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn-next:hover,
+.btn-prev:hover {
+    background-color: rgba(25, 27, 29, 0.356);
+}
+#thumbnail {
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+}
+/* Additional styles for titles */
+h1, h3 {
+    position: relative;
+    z-index: 2; /* Ensure titles are above the navigation bar */
+    margin-left: 210px; /* Adjusted to match the left margin */
+}
